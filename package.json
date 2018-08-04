@@ -1,0 +1,26 @@
+{
+  "name": "api-price-gold-in-thailand",
+  "version": "1.0.0",
+  "description": "api price gold in Thailand",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pichai Limpanitivat",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PichaiLim/NodeJS_GetContent_with_API.git"
+  },
+  "keywords": [
+    "api",
+    "price",
+    "gold",
+    "in",
+    "Thailand"
+  ],
+  "bugs": {
+    "url": "https://github.com/PichaiLim/NodeJS_GetContent_with_API/issues"
+  },
+  "homepage": "https://github.com/PichaiLim/NodeJS_GetContent_with_API#readme"
+}

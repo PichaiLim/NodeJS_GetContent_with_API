@@ -86,6 +86,8 @@ const chio = (loadDocument) => {
 (async (url) => {
     // console.log(await getScript(url));
     // console.log(cheerio.load('div[id=DetailPlace_uc_goldprices1_GoldPricesUpdatePanel]').html(await getScript(url)))
-    return console.log(chio(await getScript(url)));
+    let contentJson = chio(await getScript(url))
+    console.log(contentJson)
+    return contentJson
 
 })(uri);

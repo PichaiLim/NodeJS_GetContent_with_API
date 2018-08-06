@@ -32,6 +32,27 @@ const getScript = (url) => {
     });
 };
 
+/* const getScript = (url) => {
+    return new Promise((resolve, reject) => {
+        var request = require("request");
+
+        var options = {
+            method: 'GET',
+            url: 'https://www.goldtraders.or.th/Default.aspx',
+            headers: {
+                'postman-token': 'af84a99f-c75e-e291-0c47-7d2a31ba437f',
+                'cache-control': 'no-cache'
+            }
+        };
+
+        request(options, function (error, response, body) {
+            if (error) throw new Error(error);
+            if (response.statusCode === 200)
+                console.log(body);
+        });
+
+    })
+} */
 
 // param Dom HTML
 const chio = (loadDocument) => {
@@ -44,14 +65,14 @@ const chio = (loadDocument) => {
     // Data
     const fruits = {
         dateTime: {
-            date: spl[0].replace(/[/]/g,'-'),
+            date: spl[0].replace(/[/]/g, '-'),
             time: spl[2],
-            countReport: parseInt(spl[5].replace(/[())]/g,''))
+            countReport: parseInt(spl[5].replace(/[())]/g, ''))
         },
         header: [],
         data: [],
-        report: parseInt(spl[5].replace(/[())]/g,'')),
-        api:{
+        report: parseInt(spl[5].replace(/[())]/g, '')),
+        api: {
             version: "1.0",
             develop_by: "Mr.Pichai Limpanitivat",
             created_at: '1 Aug 2018'
